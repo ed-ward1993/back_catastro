@@ -27,5 +27,18 @@ Una vez se configure esto, ir a la raiz de la carpeta
 *  sbt run
 
   Una vez termine podras ejecutar el frontend de esta app
-  * C:\Program Files\Java\jdk1.8.0_202\bin 
+  * C:\Program Files\Java\jdk1.8.0_202\bin
+
+    # Mejoras al sistema 
+* Implementación de EhCache para parámetros generales
+
+* Optimización de persistencia JPA para cargas Lazy
+
+* Implementación de Pruebas Unitarias tanto en Front como en Back
+
+* Realizar análisis de código estático
+
+* Realizar análisis de cobertura de código
+
+* Utilización de Docker para despliegue
   
