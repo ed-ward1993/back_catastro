@@ -29,6 +29,14 @@ Una vez se configure esto, ir a la raiz de la carpeta
   Una vez termine podras ejecutar el frontend de esta app
   * C:\Program Files\Java\jdk1.8.0_202\bin
 
+Tener instalado PostgreSql, haber ejecutado el script de base de datos y por ultimo modificar la conexion del backend a la base de datos en la siguiente ruta 
+
+Conf/application.conf 
+
+  * modificar la linea 
+  
+  # default.url="postgres://postgres:qwerty@localhost/postgres"
+
     # Mejoras al sistema 
 * Implementación de EhCache para parámetros generales
 
