@@ -1,0 +1,34 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+GET     /                           controllers.CatastroController.index
+GET     /listPredio					controllers.CatastroController.listPredio()
+GET     /listContruccion            controllers.CatastroController.listConstruccion()
+GET     /listPropietario            controllers.CatastroController.listPropietario()
+GET     /listTerreno				controllers.CatastroController.listTerreno()
+
+GET     /listTipoConstruccion		controllers.CatastroController.listTipoConstruccion()
+GET     /listTipoDocumento			controllers.CatastroController.listTipoDocumento()
+GET     /listTipoPersona			controllers.CatastroController.listTipoPersona()
+GET     /listTipoTerreno			controllers.CatastroController.listTipoTerreno()
+
+
+POST    /createConstruccion         controllers.CatastroController.createConstruccion(request: Request)
+POST    /updateConstruccion         controllers.CatastroController.updateConstruccion(request: Request)
+POST    /deleteConstruccion         controllers.CatastroController.deleteConstruccion(request: Request)
+
+POST    /createPropietario         	controllers.CatastroController.createPropietario(request: Request)
+POST    /updatePropietario         	controllers.CatastroController.updatePropietario(request: Request)
+POST    /deletePropietario         	controllers.CatastroController.deletePropietario(request: Request)
+
+POST    /createTerreno         		controllers.CatastroController.createTerreno(request: Request)
+POST    /updateTerreno         		controllers.CatastroController.updateTerreno(request: Request)
+POST    /deleteTerreno         		controllers.CatastroController.deleteTerreno(request: Request)
+
+
+POST    /createPredio         		controllers.CatastroController.createPredio(request: Request)
+POST    /updatePredio         		controllers.CatastroController.updatePredio(request: Request)
+POST    /deletePredio         		controllers.CatastroController.deletePredio(request: Request)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
